@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://kit.fontawesome.com/4326f6cda5.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	
+	<title>Confirmation Page</title>
+</head>
+<body>
+
+	<header>
+		<div class="wrapper" id="header-wrap">
+
+			<div id="ham-icon">
+				<div class="ham-bar1"></div>
+				<div class="ham-bar2"></div>
+				<div class="ham-bar3"></div>
+			</div>
+
+			<div id="header-left-sec">
+				<div id="logo"><a href="index.html">Shop<span>Lane</span></a></div>
+				<nav id="top-menu">
+					<ul>
+						<li><a href="index.html#clothing-head">Clothing</a></li>
+						<li><a href="index.html#accesories-head">Accessories</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<div id="header-right">
+				<form>
+					<i class="fas fa-search"></i>
+					<input type="search" name="search" placeholder="Search for Clothing and Accessories">
+				</form>
+				<div id="cart">
+					<a href="checkout.html"><i class="fas fa-cart-arrow-down" ><span></span></i></a>
+					<img id="profile-pic" src="/img/18942381.jpg" alt="profile-pic">
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		
+		<div class="wrapper" id="confirm">	
+			<i class="fas fa-check-circle"></i>
+			<h1>Order Placed Successfully!!!</h1>
+			<p class="desc">We have sent you an email with the order details</p>
+		</div>
+
+	</main>
+
+	<footer>
+		
+		<div class="wrapper" id="footer-wrap">
+			<div>
+				<h3>Online store</h3>
+				<ul>
+					<li><a href="#">Men clothing</a></li>
+					<li><a href="">Women clothing</a></li>
+					<li><a href="">Men accessories</a></li>
+					<li><a href="">Women accessories</a></li>
+				</ul>
+			</div>
+
+			<div>
+				<h3>Online store</h3>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+			<div>
+				<h3>Partners</h3>
+				<ul>
+					<li><a href="#">Zara</a></li>
+					<li><a href="#">Pantaloons</a></li>
+					<li><a href="#">Levis</a></li>
+					<li><a href="#">Ucb</a></li>
+					<li><a href="#">+ Many more</a></li>
+				</ul>
+			</div>
+			<div>
+				<h3>Address</h3>
+				<ul>
+					<li><a href="#">Building 101</a></li>
+					<li><a href="#">Central Avenue</a></li>
+					<li><a href="#">LA - 902722</a></li>
+					<li><a href="#">United States</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<img id="edyoda-logo" src="https://i.imgur.com/OKAY6Fl.png" alt="Edyoda logo">
+
+	</footer>
+
+  	<script type="text/javascript">
+
+	      $(document).ready(function() {
+
+			var hHeight = $('header').css('height');
+			hHeight = Math.floor(hHeight.substr(-hHeight.length, hHeight.length-2));
+			$('main').css('margin-top', hHeight+20+"px");
+
+			$("#ham-icon").on( "click", function() {
+				$("#header-wrap").toggleClass("change");
+			});
+
+	      });
+
+		  $(window).scroll(function () {
+			  if ( $(this).scrollTop() > 0 ) {
+				  $('header').css('box-shadow', '0 2px 10px #ccc');
+			  } else $('header').css('box-shadow', 'none');
+		  });
+
+	</script>
+  
+</body>
+</html>

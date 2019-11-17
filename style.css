@@ -1,0 +1,660 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,400i,700,700i,900,900i&display=swap');
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+header{
+	background-color: #fff;
+	width: 100%;
+	position: fixed;
+    left: 0;
+    top: 0;
+	z-index: 20;
+}
+
+#ham-icon{
+	display: none;
+	cursor: pointer;
+}
+
+.ham-bar1, .ham-bar2, .ham-bar3{
+	background-color: #333;
+	margin: 4px 0;
+	width: 20px;
+	height: 3px;
+	transition: 0.4s;
+}
+
+#header-left-sec, #header-right-sec{
+	display: flex;
+	align-items: center;
+	width: 50%;
+}
+
+#header-left-sec{
+	justify-content: flex-start;
+}
+
+#header-right-sec {
+	justify-content: inherit;
+}
+
+#header-wrap {
+	display: flex;
+	justify-content: space-between;
+}
+
+.wrapper {
+	padding: 20px 10px;
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+#logo a{
+	color: #007eff;
+	font-size: 2em;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+#logo span{
+	font-weight: 100;
+	color: #000;
+}
+
+ul{
+	list-style-type: none;
+	margin: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+#top-menu ul li{
+	display: inline-block;
+	margin: 0 10px;
+}
+
+#top-menu a{
+	text-transform: uppercase;
+	color: #000;
+	font-weight: 600;
+	transition: all 0.2s linear;
+	border-bottom: 2px solid transparent;
+}
+
+#top-menu a:hover{
+	border-bottom: 2px solid #000;
+}
+
+form{
+	position: relative;
+    width: 400px;
+    padding: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+	cursor: pointer;
+}
+
+i{
+	color: gray;
+}
+
+form i{
+	position: absolute;
+	left: 4%;
+	top: 50%;
+    transform: translate(0, -50%);
+}
+
+input{
+    outline: none;
+    border: 0;
+    width: 85%;
+    position: absolute;
+    left: 12%;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+}
+
+input:focus::placeholder{
+	color: transparent;
+}
+
+#cart{
+	display: flex;
+	align-items: center;
+}
+
+#cart i{
+	position: relative;
+	font-size: 1.3em;
+	margin-right: 20px;
+	color: #000;
+}
+
+#counter{
+	position: absolute;
+	top: -18px;
+	right: -15px;
+    background-color: #007eff;
+    width: 15px;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+}
+
+#profile-pic{
+	width: 40px;
+	border-radius: 50%;
+	border: 3px solid #ccc;
+}
+
+h1, h2{
+	color: #007eff;
+	font-size: 2em;
+}
+
+#clothes, #accesories{
+	display: flex;
+	justify-content: space-between;
+}
+
+#dataCard{
+	text-align: center;
+	display: inline-block;
+	margin: 0 10px 10px 0;
+	border-radius: 10px;
+	box-shadow: 0 5px 10px #ddd;
+	transition: 0.2s;
+}
+
+#dataCard:hover{
+	box-shadow: 0 5px 10px #ccc;
+}
+
+#dataCard img{
+	width: 	100%;
+	border-radius: 10px;
+}
+
+caption{
+	padding: 10px 0;
+}
+
+#dataCard h4{
+	font-size: 1em;
+}
+
+#dataCard h4, #dataCard p{
+	margin: 0;
+}
+
+.desc{
+	color: #797979;
+}
+
+.price{
+	color: crimson;
+}
+
+footer{
+	background-color: #333;
+	position: relative;
+}
+
+#footer-wrap{
+	display: flex;
+	justify-content: space-around;
+}
+
+footer h3{
+	text-align: left;
+	color: #007eff;
+	position: relative;
+	margin: 0;
+	padding-bottom: 15px;
+	margin-bottom: 10px;
+	font-weight: 100;
+}
+
+footer h3::after{
+	content: " ";
+	background: url('../img/footer-heading-border.jpg') bottom left repeat-x;
+	width: 150px;
+	height: 1px;
+	left: 0;
+	bottom: 0;
+	position: absolute;
+}
+
+#edyoda-logo {
+	position: fixed;
+	bottom: 2%;
+	right: 1%;
+	width: 8%;
+	z-index: 10;
+}
+footer ul {
+	padding: 0;
+}
+
+footer a:hover {
+	color: #007eff;
+}
+
+footer li {
+	margin-bottom: 2px;
+}
+
+footer a {
+	color: #a8a8a8;
+	transition: all 0.2s linear;
+}
+
+
+#details {
+	display: flex;
+	justify-content: space-between;
+}
+
+#left {
+	width: 40%;
+}
+
+#left img {
+	width: 300px;
+	border-radius: 10px;
+}
+
+#right {
+	width: 60%;
+}
+
+.review {
+	width: 70px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+}
+
+.review-active {
+	border: 2px solid #007eff;
+}
+
+#details h1 {
+	margin: 0;
+}
+
+#details .desc {
+	margin: 0;
+}
+
+#details .desc:first-of-type {
+	font-size: 1.2em;
+}
+
+#details .desc:last-of-type {
+	text-align: justify;
+}
+
+#details span {
+	color: #797979;
+}
+
+button {
+	display: block;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background-color: #007eff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+	transition: 0.2s;
+}
+
+button:hover {
+	background-color: #3a99fb;
+}
+
+#kindablock {
+	display: flex;
+	justify-content: space-between;
+}
+
+#total-items {
+	font-size: 1.2em;
+}
+
+#left-check {
+	width: 60%;
+}
+
+#right-check {
+	width: 40%;
+	max-height: 155px;
+	box-shadow: 5px 5px 10px #ccc;
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+#right-check h2 {
+	margin: 0;
+	color: #007eff;
+}
+
+.desc span {
+	font-weight: bold;
+	color: black;
+	font-size: 1.2em;
+}
+
+.item {
+	box-shadow: 5px 5px 10px #ccc;
+	border-radius: 10px;
+	padding: 10px;
+	overflow: hidden;
+	width: 70%;
+	margin-bottom: 15px;
+}
+
+.item h4 {
+	margin: 0;
+}
+
+.item img {
+	width: 70px;
+	float: left;
+	margin-right: 10px;
+	border-radius: 5px;
+}
+
+#checkout .item {
+	cursor: pointer;
+	transition: all 0.2s;
+}
+
+#checkout .item:hover {
+	background-color: #eaeaea;
+}
+
+#left-check .desc {
+	margin-bottom: 0;
+}
+
+#confirm {
+	text-align: center;
+}
+
+#confirm i{
+	font-size: 15em;
+	color: #007eff;
+}
+
+#confirm h1, p {
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('https://i.imgur.com/dLtxxJt.gif') center no-repeat #fff;
+}
+
+@media screen and (max-width: 900px) {
+	#header-left {
+		flex-flow: column;
+		justify-content: space-around;
+	}
+
+	#header-right {
+		flex-flow: column-reverse;
+	}
+
+	#top-menu ul {
+		text-align: center;
+		padding: 0;
+	}
+
+	#card {
+		padding: 5px 0;
+	}
+
+	h1, h2 {
+		font-size: 1.8em;
+	}
+
+	#details h1 {
+		margin-bottom: 20px;
+	}
+
+	#clothes, #accesories {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	#dataCard {
+		width: 22%;
+	}
+
+	#footer-wrap div {
+		width: 40%;
+	}
+
+	#footer-wrap {
+		flex-wrap: wrap;
+		justify-content: end;
+	}
+
+	footer h3 {
+		margin-top: 10px;
+	}
+
+	#edyoda-logo {
+		width: 12%
+	}
+
+	#left img {
+		width: 200px;
+	}
+
+	.review {
+		width: 50px;
+	}
+
+	#details {
+		flex-wrap: wrap;
+		text-align: center;
+	}
+
+	#details h3{
+		margin: 0;
+	}
+
+	#details .desc {
+		margin: 10px 0;
+	}
+
+	#details .desc:last-of-type {
+		text-align: center;
+	}
+
+	button {
+		margin: 0 auto;
+	}
+
+	#kindablock {
+		flex-wrap: wrap;
+	}
+
+	.item {
+		margin: 0 auto;
+		width: 90%;
+		margin-bottom: 10px;
+	}
+
+	#checkout h1, #total-items {
+		text-align: center;
+	}
+
+	#right-check {
+		text-align: center;
+	}
+
+	#left, #right, #left-check, #right-check {
+		width: 100%;
+		display: inline-block;
+	}
+
+}
+
+@media screen and (max-width: 750px) {
+
+	#dataCard {
+		width: 30%;	
+	}
+
+	h1, h2 {
+		font-size: 	1.5em;
+	}
+
+	#edyoda-logo {
+		width: 18%
+	}
+
+	#confirm i {
+		font-size: 12em;
+	}
+
+}
+
+@media screen and (max-width: 500px) {
+
+	header .wrapper{
+		padding: 0;
+	}
+
+	#header-wrap {
+		flex-flow: column;
+		align-items: center;
+	}
+
+	#ham-icon{
+		display: block;
+	}
+
+	#header-left {
+		opacity: 0;
+		height: 0;
+		overflow: hidden;
+		transition: opacity 1s ease-out;
+	}
+
+	.change .bar1 {
+		-webkit-transform: rotate(-45deg) translate(-5px, 5px);
+		transform: rotate(-45deg) translate(-5px, 5px);
+	}
+
+	.change .bar2 {opacity: 0;}
+
+	.change .bar3 {
+		-webkit-transform: rotate(45deg) translate(-4px, -6px);
+		transform: rotate(45deg) translate(-4px, -6px);
+	}
+
+	.change #header-left {
+		opacity: 1;
+		height: auto;
+		overflow: visible;
+	}
+
+    #header-right {
+        display: flex;
+        width: 100%;
+        margin: 5px 0;
+    }
+
+	#logo {
+		margin-bottom: 5px;
+	}
+
+	h1, h2 {
+		text-align: center;
+	}
+
+	#dataCard {
+		width: 48%;
+		margin: 0;
+		margin-bottom: 15px;
+	}
+
+	#footer-wrap div {
+		width: 90%;
+	}
+
+	form {
+		width: 250px;
+	}
+
+	form input {
+		font-size: 0.8em;
+	}
+
+
+}
+
+@media screen and (max-width: 400px) {
+
+	#logo a {
+		font-size: 1.5em;
+	}
+
+	input {
+		font-size: .9em;
+	}
+
+	h1, h2 {
+		font-size: 1.2em;
+	}
+
+	#clothes, #accessories {
+		justify-content: center;
+	}
+
+	#dataCard {
+		width: 80%;
+	}
+
+	#edyoda-logo {
+		width: 25%;
+	}
+
+	#confirm i {
+		font-size: 6em;
+	}
+
+}
